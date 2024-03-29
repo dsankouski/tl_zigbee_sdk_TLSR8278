@@ -17,6 +17,7 @@ OBJS += \
 
 # Each subdirectory must supply rules for building sources it contributes
 apps/common/%.o: $(TEL_PATH)/apps/common/%.c
+	@mkdir -p apps/common
 	@echo 'Building file: $<'
 	@echo 'Invoking: TC32 Compiler'
 	tc32-elf-gcc $(GCC_FLAGS) $(INCLUDE_PATHS) $(CONFIG) -c -o"$@" "$<"

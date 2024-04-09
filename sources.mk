@@ -55,6 +55,5 @@ platform/boot/8278 \
 platform/boot/826x \
 platform/boot/8258 \
 . \
-apps/sampleSwitch \
 apps/common \
 
